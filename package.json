@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/imHenryMa/restaurant-page/issues"
   },
-  "homepage": "https://github.com/imHenryMa/restaurant-page#readme"
+  "homepage": "https://github.com/imHenryMa/restaurant-page#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
 }
