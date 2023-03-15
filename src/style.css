@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border: 1px solid red;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    height: 100svh;
+    width: 100vw;
+    width: 100svw;
+
+    background-image: url("./img/bg.jpg");
+    background-size:cover;
+    background-position: 50% 50%;
+}
+
+.content{
+    border: 1px solid cyan;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+header{
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0.9);
+    color: rgb(220,220,220);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav{
+    border: 1px solid navy;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+button {
+    box-sizing: border-box;
+    background-color: black;
+    padding: 1rem 2rem;
+    border: none;
+    color: rgb(220,220,220);
+    transition: 0.125s;
+}
+
+button:hover{
+    background-color: grey;
+    transform: scale(110%);
+}
+
+button:active{
+    background-color: darkgray;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    border-top: 1px solid magenta;
+    border-bottom: 1px solid blue;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.subcontent{
+    width: clamp(30rem,70%,60rem);
+    height: clamp(30rem,70%,60rem);
+    background-color: rgba(0,0,0,0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subcontent > * {
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(100,100,100,0.8);
+}
